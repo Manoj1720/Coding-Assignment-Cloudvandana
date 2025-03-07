@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>ToDo List</title>
+</head>
+<style>
+    h1{
+        background-color: red;
+        padding: 10px;
+        border-radius: 10px;
+        color:aliceblue;
+    }
+    input {
+        width: 50%;
+        padding: 8px;
+        border: 2px solid gray;
+        border-radius: 5px;
+    }
+    
+    button{
+        background-color: red;
+        color: white;
+        width: 50px;
+        font-size: 12px;
+        padding: 5px;
+        border: none;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: darkred;
+    }
+    #listbox {
+        text-align: center;
+        margin-top: 50px;
+
+    }
+    li {
+        background-color: white;
+        width:75%;
+        padding: 10px;
+        margin: 5px 5px;
+        border-radius: 5px;
+        text-align: left;
+    }
+    li button {
+        float: right;
+        font-size: 12px;
+        padding: 5px;
+    }
+    
+</style>
+<body style="margin: 3%; background-color: burlywood;">
+    <center>
+            <h1>Hi! Welcome to my project here you can make your ToDo list.</h1>
+    </center>
+    <div id="listbox">
+        <input type="text" id="input">
+        <button onclick="add()">Add</button>
+        <ul id="list_containers">
+           
+        </ul>
+            
+    </div>
+    
+</body>
+</html>
+<script>
+    
+    function add(){
+        if(input.value ===""){
+            alert("Enter Something to add");
+        }
+        else{
+            var listitem=document.createElement("li")
+            listitem.innerHTML=input.value + "<button onclick='deleteitem(event)'>Delete</button>"
+            list_containers.append(listitem)
+            input.value=""
+        }
+    }
+    function deleteitem(event){
+        event.target.parentElement.remove()
+
+    }
+</script>

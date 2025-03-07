@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Profile Card</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color:darkcyan;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 10px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 300px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            background: aliceblue;
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit:cover;
+            margin: 15px;
+        }
+
+        .card h2 {
+            margin: 10px;
+            color: #333232;
+        }
+
+        .card p {
+            color: #727070;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: #696868;
+            margin: 0 10px;
+            font-size: 24px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .social-icons a:hover {
+            color: #0073b1;
+        }
+
+        .social-icons a.instagram:hover {
+            color: #E1306C;
+        }
+
+        .social-icons a.github:hover {
+            color: #181717;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="card">
+        <img src="Mano.jpg" alt="Profile Picture">
+        <h2>Manoj A</h2>
+        <p>ASE @ Cloudvandana</p>
+        <p>I'm an aspiring software developer.</p>
+        
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/manoj-a-649712235/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Manoj1720" target="_blank" class="github">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/at_manoj17?igsh=MW0ycmVpbG5qZnhkbw==" target="_blank" class="instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
