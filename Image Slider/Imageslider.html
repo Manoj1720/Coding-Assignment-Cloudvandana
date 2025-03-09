@@ -57,34 +57,7 @@
         </div>
     </div>
 
-    <script>
-        var images = [
-            "images (4).jpeg",
-            "images (6).jpeg",
-            "images (7).jpeg"
-        ];
-
-        let currentIndex = 0;
-        var sliderimg = document.getElementById("slider_image");
-        var prevbtn = document.getElementById("prevbtn");
-        var nextbtn = document.getElementById("nextbtn");
-
-        updateImage();
-
-        function updateImage() {
-            sliderimg.src = images[currentIndex];
-        }
-
-        nextbtn.addEventListener("click", function () {
-            currentIndex = (currentIndex + 1) % images.length;
-            updateImage();
-        });
-
-        prevbtn.addEventListener("click", function () {
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-            updateImage();
-        });
-    </script>
+    <script src="imslide.js"></script>
 
 </body>
 </html>
